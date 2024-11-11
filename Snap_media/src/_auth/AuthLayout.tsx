@@ -1,5 +1,5 @@
 import { Outlet, Navigate } from "react-router-dom";
-import wallpapper from "../../public/assets/images/Chat Media!.png"
+import wallpapper from "../../public/assets/images/Snap_media.png"
 import { useUserContext } from "@/context/AuthContext";
 
 export default function AuthLayout() {
