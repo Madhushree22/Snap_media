@@ -21,7 +21,6 @@ const Home = () => {
               {posts?.documents.map((post: Models.Document) => (
                 <li key={post.$id} className="flex justify-center w-full">
                   <PostCard post={post} key={post.captions}/>
-                  {/* {post.captions} */}
                 </li>
               ))}
             </ul>

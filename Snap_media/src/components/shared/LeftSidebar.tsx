@@ -24,12 +24,6 @@ const LeftSidebar = () => {
     <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
-          {/* <img
-            src="/assets/images/logo.svg"
-            alt="logo"
-            width={170}
-            height={36}
-          /> */}
           <img src={chat} alt="logo" height={170} width={200} />
         </Link>
 
