@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+This project uses Appwrite as the backend service. All sensitive IDs (e.g., API keys, project IDs) have been removed to ensure the security of sensitive information, especially for public repositories like GitHub.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Adding Your Own Appwrite IDs
+To run this project, you’ll need to configure it with your own Appwrite credentials. Follow these steps:
 
-Currently, two official plugins are available:
+Create an Appwrite Project: Go to your Appwrite console, create a new project, and note the project ID.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add Required Services: Set up the necessary databases, authentication, storage, and other services used in this project. For each service, take note of any required IDs, keys, or endpoints.
 
-## Expanding the ESLint configuration
+Update Environment Variables: Replace the missing IDs and keys in the project environment file or configuration file. For example:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Project ID
+Database ID
+Collection IDs
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Local Testing: Once you've configured the project with your Appwrite credentials, test the setup locally before deploying to ensure everything is working correctly.
